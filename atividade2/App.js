@@ -1,27 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View} from 'react-native';
-import Navbar from '../votacao/navbar';
-import Index  from '../votacao/index';
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Navbar></Navbar>
-      <Index></Index>
-      
-      <StatusBar style="auto" />
-  
-    </View>
-  );
+import {StatusBar, StyleSheet, Text, View} from 'react-native';
+import IMCApp from './IMC/IMCApp';
 
-  
+export default function App() {
+    return (
+        <View style={styles.container}>
+            <StatusBar backgroundColor={"#381859"}></StatusBar>
+            <IMCApp></IMCApp>
+        </View>
+
+    )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    container: {
+        flex: 1,
+        backgroundColor: '#E3E3E3',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 40,
+
+    },
+})
+
